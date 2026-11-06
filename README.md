@@ -16,6 +16,12 @@ A responsive portfolio highlighting Pallavi's current internship focus: **Digita
 - Jijnasa 2K25 paper-presentation recognition.
 - Contact links to GitHub and LinkedIn.
 
+## Certifications and Technical Programmes
+- **NIELIT × SoCTeamup Semiconductors — Bootcamp: RTL, IP Integration and SoC Signoff:** 30 hours, 29 July–3 August 2026; part of a MeitY-sponsored semiconductor EdTech initiative.
+- **8th Edition Indo-Dutch Cyber Security School (IDCSS 2025):** 30 learning hours and 30 CPE credits.
+- **IETE Hyderabad Centre — Embedded IoT Application Development:** one-month online professional development programme, 10 October–9 November 2025.
+- **45th National Symposium on Instrumentation (NSI-45):** poster presentation, “Graphene MEMS RF Switches for UAV Radar Beam Steering,” 29–30 January 2026, Department of Biomedical Engineering, UCE(A), Osmania University.
+
 ## Built with
 HTML, CSS and vanilla JavaScript. No build step or dependencies required.
 
