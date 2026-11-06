@@ -36,7 +36,7 @@ GitHub Pages deploys the static site from the repository's GitHub Actions workfl
 - The APB RAM repository includes a modular SystemVerilog test environment and simulation artifacts; its current recorded logs include scoreboard mismatches, so the site does not claim a clean verification pass.
 - The Hessian/BFP2 project documents ongoing work on full end-to-end numerical equivalence and timing closure.
 - The 128-point FFT repository is linked as a supporting project with simulation and numerical verification still pending.
-- Certification entries are intentionally not listed until exact titles, issuers, dates and credential links can be confirmed from LinkedIn.
+- Certification and programme details on the site are transcribed from certificate information supplied by Pallavi. The NSI-45 poster title was normalized from unclear source text and should be checked against the original certificate before formal reuse.
 
 ## Links
 - GitHub: https://github.com/pallavibehurageek-cyber
