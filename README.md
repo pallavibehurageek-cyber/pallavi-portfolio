@@ -1,25 +1,36 @@
-# Pallavi Behura — Portfolio
+# Pallavi Behura — RTL Design & Digital Hardware Portfolio
 
-A responsive, static portfolio website for Pallavi Behura, Electronics and Communication Engineering student.
+A responsive portfolio highlighting Pallavi's current internship focus: **Digital Design / RTL, Design Verification and DFT**.
 
-## Sections
-- About and academic profile
-- DRDL internship experience (2025 and 2026)
-- Selected RF, digital design, DSP and embedded projects
-- Technical toolkit
-- Jijnasa 2K25 paper-presentation recognition
-- Contact and social links
+## Featured engineering work
+- Continuous-flow 4096-point FFT/IFFT accelerator with documented functional test results and 45 nm synthesis/power comparisons.
+- SystemVerilog APB RAM design and modular transaction-based test environment.
+- AXI4-Lite programmable PWM peripheral IP with self-checking testbench and waveform captures.
+- RISC-V SoC integrating AXI4-Lite/APB, BRAM, a custom fixed-point matrix accelerator and UART.
+- Hessian-guided BFP2 quantization and channel-scatter accelerator research prototype.
+- EvoFFT mixed-precision FFT design-space exploration framework.
+
+## Other sections
+- DRDL internship experience, with the FPGA/VHDL controller internship presented as relevant embedded/digital experience.
+- Technical toolkit grouped into RTL, verification, architecture, accelerators, FPGA, synthesis/PPA and programming.
+- Jijnasa 2K25 paper-presentation recognition.
+- Contact links to GitHub and LinkedIn.
 
 ## Built with
 HTML, CSS and vanilla JavaScript. No build step or dependencies required.
 
 ## Run locally
-Open `index.html` in a browser.
+Open index.html in a browser.
 
-## Deploy with GitHub Pages
-In the repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and **/(root)**, then save.
+## Deployment
+GitHub Pages deploys the static site from the repository's GitHub Actions workflow.
 
-The project cards link directly to the public GitHub repositories. Descriptions are concise summaries based on repository names and the supplied experience details; update them as needed to reflect implementation specifics.
+## Accuracy notes
+- DFT is shown as a target internship track, not as prior professional experience. The public repositories reviewed for this update show stronger hands-on evidence in RTL design, functional verification and accelerator architecture; no dedicated scan/ATPG project was identified.
+- The APB RAM repository includes a modular SystemVerilog test environment and simulation artifacts; its current recorded logs include scoreboard mismatches, so the site does not claim a clean verification pass.
+- The Hessian/BFP2 project documents ongoing work on full end-to-end numerical equivalence and timing closure.
+- The 128-point FFT repository is linked as a supporting project with simulation and numerical verification still pending.
+- Certification entries are intentionally not listed until exact titles, issuers, dates and credential links can be confirmed from LinkedIn.
 
 ## Links
 - GitHub: https://github.com/pallavibehurageek-cyber
