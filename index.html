@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f6f3">
-  <meta name="description" content="Pallavi Behura — digital hardware portfolio covering VLSI, RTL design, SystemVerilog verification, computer architecture, DSP and AI/ML hardware.">
+  <meta name="theme-color" content="#101c2b">
+  <meta name="description" content="Pallavi Behura — engineering portfolio in VLSI, RTL design, SystemVerilog verification, computer architecture, DSP accelerators and AI/ML hardware.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Pallavi Behura — Digital Hardware">
-  <meta property="og:description" content="Selected work in RTL design, verification, computer architecture and hardware acceleration.">
+  <meta property="og:title" content="Pallavi Behura — Digital Hardware & RTL Design">
+  <meta property="og:description" content="Detailed projects in RTL, verification, RISC-V SoC design, DSP accelerators and AI/ML hardware.">
   <meta name="author" content="Pallavi Behura">
-  <title>Pallavi Behura — Digital Hardware</title>
+  <title>Pallavi Behura — Digital Hardware & RTL Design</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,189 +20,264 @@
   <a class="brand" href="#home" aria-label="Pallavi Behura home"><span class="brand-mark">PB</span><span>PALLAVI BEHURA</span></a>
   <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <nav class="nav-links" aria-label="Main navigation">
-    <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Toolkit</a><a href="#experience">Experience</a><a href="#learning">Learning</a><a class="nav-contact" href="#contact">Contact <span>↗</span></a>
+    <a href="#about">About</a><a href="#projects">Projects</a><a href="#process">Design process</a><a href="#skills">Toolkit</a><a href="#experience">Experience</a><a class="nav-contact" href="#contact">Contact <span>↗</span></a>
   </nav>
 </header>
 
 <main>
-  <section class="hero section-wrap" id="home">
-    <div class="hero-copy">
-      <div class="eyebrow">ELECTRONICS &amp; COMMUNICATION ENGINEERING <span>·</span> 2024–2028</div>
-      <h1>Building digital<br><span>hardware,</span><br>one layer at a time.</h1>
-      <p class="hero-lead">I’m <strong>Pallavi Behura</strong>. My work centres on VLSI/RTL design, SystemVerilog verification, computer architecture, DSP accelerators and AI/ML hardware. I like understanding how a design moves from architecture to RTL, simulation and implementation.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#projects">Explore selected work <span>↘</span></a>
-        <a class="button button-secondary" href="https://github.com/pallavibehurageek-cyber" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a class="button button-secondary" href="https://www.linkedin.com/in/pallavi-behura-547329214/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+  <section class="hero" id="home">
+    <div class="hero-inner section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> ELECTRONICS &amp; COMMUNICATION ENGINEERING · 2024–2028</div>
+        <h1>Digital hardware.<br><em>Designed with intent.</em></h1>
+        <p class="hero-lead">I’m <strong>Pallavi Behura</strong> — a prefinal-year B.Tech ECE student exploring the path from architecture to RTL, verification and implementation. My work focuses on <strong>VLSI / RTL design, computer architecture, DSP accelerators and AI/ML hardware</strong>.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore selected work <span>↘</span></a>
+          <a class="button button-outline" href="https://github.com/pallavibehurageek-cyber" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button button-outline" href="https://www.linkedin.com/in/pallavi-behura-547329214/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+        <div class="hero-topics"><span>FOCUS AREAS</span><b>RTL DESIGN</b><i>·</i><b>DESIGN VERIFICATION</b><i>·</i><b>AI/ML HARDWARE</b></div>
       </div>
-      <div class="focus-line"><span>FOCUS</span> RTL DESIGN <i>·</i> VERIFICATION <i>·</i> COMPUTER ARCHITECTURE <i>·</i> AI/ML HARDWARE</div>
-    </div>
-    <div class="hero-visual" aria-label="Digital hardware design flow">
-      <div class="visual-caption">FROM SPECIFICATION TO IMPLEMENTATION</div>
-      <div class="flow-stack">
-        <div class="flow-node"><span>01</span><div><b>Architecture</b><small>Blocks · interfaces · datapaths</small></div></div>
-        <div class="flow-connector"></div>
-        <div class="flow-node flow-node-active"><span>02</span><div><b>RTL design</b><small>Verilog · SystemVerilog</small></div></div>
-        <div class="flow-connector"></div>
-        <div class="flow-node"><span>03</span><div><b>Verification</b><small>Simulation · assertions · debug</small></div></div>
-        <div class="flow-connector"></div>
-        <div class="flow-node"><span>04</span><div><b>Implementation</b><small>FPGA · synthesis · PPA</small></div></div>
+      <div class="hero-visual">
+        <div class="visual-top"><span>ENGINEERING PIPELINE</span><span>01 — 04</span></div>
+        <div class="pipeline">
+          <div class="pipeline-step"><span class="step-no">01</span><div><b>Architecture</b><small>Microarchitecture · interfaces · datapaths</small></div><span class="step-mark">◇</span></div>
+          <div class="pipeline-link"></div>
+          <div class="pipeline-step active"><span class="step-no">02</span><div><b>RTL implementation</b><small>Verilog · SystemVerilog · VHDL</small></div><span class="step-mark">⌘</span></div>
+          <div class="pipeline-link"></div>
+          <div class="pipeline-step"><span class="step-no">03</span><div><b>Verification</b><small>Testbenches · assertions · waveform debug</small></div><span class="step-mark">✓</span></div>
+          <div class="pipeline-link"></div>
+          <div class="pipeline-step"><span class="step-no">04</span><div><b>Implementation analysis</b><small>FPGA · synthesis · timing · PPA</small></div><span class="step-mark">▥</span></div>
+        </div>
+        <div class="visual-bottom"><span>DESIGN</span><b>→</b><span>VERIFY</span><b>→</b><span>EVALUATE</span></div>
       </div>
-      <div class="visual-foot">DESIGN <span>→</span> VERIFY <span>→</span> EVALUATE</div>
+      <div class="hero-metrics">
+        <div><strong>4096</strong><span>FFT / IFFT POINTS</span></div>
+        <div><strong>15 / 15</strong><span>FUNCTIONAL TESTS REPORTED*</span></div>
+        <div><strong>158 MHz</strong><span>SoC FPGA FMAX REPORTED*</span></div>
+        <p>*Metrics are documented in the respective project repositories; see project notes for methodology and limitations.</p>
+      </div>
     </div>
   </section>
 
   <section class="section-wrap about-section" id="about">
-    <div class="section-label"><span>01</span> ABOUT</div>
-    <div class="about-grid">
-      <h2>Curiosity built into<br><em>working systems.</em></h2>
+    <div class="section-heading">
+      <div><div class="section-label"><span>01</span> ABOUT</div><h2>Curiosity translated<br>into <em>working hardware.</em></h2></div>
+      <p class="heading-aside">A design-oriented approach to learning digital systems: understand the architecture, implement the logic, verify the behaviour and study the implementation trade-offs.</p>
+    </div>
+    <div class="about-layout">
       <div class="about-copy">
-        <p>I’m a prefinal-year B.Tech student in Electronics and Communication Engineering (2024–2028), interested in the intersection of digital design, computer architecture and hardware acceleration.</p>
-        <p>My project work includes a continuous-flow 4096-point FFT/IFFT accelerator, a RISC-V SoC with a custom fixed-point accelerator, AXI4-Lite peripheral IP and a modular SystemVerilog verification environment.</p>
-        <p>I also explore quantization, mixed-precision arithmetic and CNN datapaths. RF/antenna and embedded systems remain part of my broader ECE interests.</p>
+        <p>I’m pursuing a B.Tech in <strong>Electronics and Communication Engineering</strong> (2024–2028). My strongest current interests are VLSI/RTL design, functional verification, computer architecture and hardware acceleration.</p>
+        <p>My projects span a continuous-flow FFT/IFFT accelerator, a processor-based RISC-V SoC, memory-mapped AXI4-Lite peripheral IP and a modular SystemVerilog verification environment. I also explore hardware-aware quantization, mixed-precision arithmetic and CNN datapaths.</p>
+        <p>Outside my main digital-hardware focus, I have worked on embedded control, IoT, RF and antenna-related ECE projects.</p>
+      </div>
+      <div class="about-facts">
+        <div><span class="fact-label">ACADEMIC TRACK</span><b>B.Tech ECE</b><small>2024–2028</small></div>
+        <div><span class="fact-label">PRIMARY DOMAINS</span><b>RTL · DV · SoC</b><small>Digital hardware</small></div>
+        <div><span class="fact-label">DESIGN INTEREST</span><b>DSP + AI/ML</b><small>Hardware acceleration</small></div>
+        <div><span class="fact-label">IMPLEMENTATION</span><b>FPGA · PPA</b><small>Synthesis and analysis</small></div>
       </div>
     </div>
   </section>
 
-  <section class="section-wrap projects-section" id="projects">
-    <div class="section-heading">
-      <div><div class="section-label"><span>02</span> SELECTED WORK</div><h2>Projects &amp; <em>experiments.</em></h2></div>
-      <p>Selected repositories, ordered by the depth of their design and implementation work. Project status and limitations are stated where relevant.</p>
-    </div>
+  <section class="projects-section" id="projects">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><div class="section-label"><span>02</span> SELECTED ENGINEERING WORK</div><h2>Projects with <em>implementation detail.</em></h2></div>
+        <p class="heading-aside">A curated set of digital design and hardware acceleration projects. Open each project for architecture, implementation and validation notes.</p>
+      </div>
 
-    <article class="project-card project-featured">
-      <div class="project-number">01 / DSP ACCELERATOR</div>
-      <div class="project-featured-grid">
-        <div>
-          <div class="project-tags"><span>VERILOG</span><span>FFT / IFFT</span><span>45 NM SYNTHESIS</span></div>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter active" data-filter="all" aria-pressed="true">All work <span>07</span></button>
+        <button class="filter" data-filter="rtl" aria-pressed="false">RTL &amp; IP</button>
+        <button class="filter" data-filter="verification" aria-pressed="false">Verification</button>
+        <button class="filter" data-filter="architecture" aria-pressed="false">Architecture</button>
+        <button class="filter" data-filter="accelerator" aria-pressed="false">Accelerators</button>
+        <button class="filter" data-filter="research" aria-pressed="false">AI/ML research</button>
+      </div>
+
+      <article class="project-card featured-project" data-category="accelerator">
+        <div class="project-art art-fft">
+          <div class="art-top"><span>PROJECT 01</span><span>DSP ARCHITECTURE</span></div>
+          <div class="fft-visual"><div class="fft-wave"></div><div class="fft-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="fft-label">N = 4096</div></div>
+          <div class="art-bottom"><span>RADIX-16³</span><span>CONTINUOUS FLOW</span><span>FFT ↔ IFFT</span></div>
+        </div>
+        <div class="featured-content">
+          <div class="project-kicker">VERILOG · CLOCK GATING · CORDIC · 45 NM ANALYSIS</div>
           <h3>Continuous-Flow 4096-Point FFT / IFFT Accelerator</h3>
-          <p>A ROM-free, conflict-free radix-16³ architecture with occupancy-driven clock gating, reduced-cycle CORDIC and memory word-length optimisation. The repository includes RTL variants, reference-model checks, test infrastructure and synthesis/power reports.</p>
-          <a class="project-link" href="https://github.com/pallavibehurageek-cyber/Jointly-Optimized-Continuous-Flow-4096-Point-FFT-IFFT-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          <p class="project-summary">A ROM-free, conflict-free radix-16³ architecture designed for continuous-flow FFT/IFFT processing. The work studies architecture-level area and power trade-offs through occupancy-driven clock gating, reduced-cycle CORDIC computation and memory word-length optimisation.</p>
+          <div class="metric-grid">
+            <div><b>−19.08%</b><span>AREA VS REPRODUCED BASELINE</span></div>
+            <div><b>−54.7%</b><span>POWER ESTIMATE*</span></div>
+            <div><b>15 / 15</b><span>FUNCTIONAL TESTS REPORTED</span></div>
+          </div>
+          <div class="detail-columns">
+            <div><b>Architecture</b><p>Radix-16³ continuous-flow datapath, conflict-free memory scheduling and a CORDIC-based twiddle-factor path.</p></div>
+            <div><b>Optimisation</b><p>Occupancy-aware clock gating and memory word-length choices are evaluated against the reproduced baseline.</p></div>
+            <div><b>Evidence</b><p>RTL variants, reference-model checks, test infrastructure and documented 45 nm synthesis/power reports.</p></div>
+          </div>
+          <p class="fine-print">*The 54.7% figure is a repository-reported pre-clock-tree power estimate at 100% occupancy under the documented flow.</p>
+          <a class="project-link" href="https://github.com/pallavibehurageek-cyber/Jointly-Optimized-Continuous-Flow-4096-Point-FFT-IFFT-Accelerator" target="_blank" rel="noreferrer">Explore source, reports and simulation artifacts <span>↗</span></a>
         </div>
-        <div class="result-panel">
-          <div><b>−19.08%</b><span>AREA VS REPRODUCED BASELINE</span></div>
-          <div><b>−54.7%</b><span>POWER ESTIMATE AT 100% OCCUPANCY*</span></div>
-          <div><b>15 / 15</b><span>FUNCTIONAL TESTS REPORTED</span></div>
-          <small>*Repository-reported pre-clock-tree power estimate under the documented flow.</small>
-        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="architecture accelerator">
+          <div class="project-art art-soc"><div class="art-top"><span>PROJECT 02</span><span>COMPUTER ARCHITECTURE</span></div><div class="soc-diagram"><div class="soc-block cpu">RV32IM<br/><small>CPU</small></div><div class="soc-bus">AXI4-Lite<br/>↕<br/>APB</div><div class="soc-peripherals"><span>BRAM</span><span>Q4.4 MAC</span><span>UART</span></div></div><div class="art-bottom"><span>PICORV32</span><span>MEMORY-MAPPED I/O</span></div></div>
+          <div class="project-content">
+            <div class="project-kicker">VERILOG · AXI4-LITE · APB · FPGA</div><h3>RISC-V SoC with Custom ML Accelerator</h3>
+            <p>A processor-based system integrating a PicoRV32 RV32IM core, AXI4-Lite-to-APB bridge, BRAM, a fixed-point matrix accelerator, APB UART and bare-metal firmware.</p>
+            <div class="project-facts"><span><b>8 KB</b> BRAM</span><span><b>Q4.4</b> fixed point</span><span><b>4×4</b> matrix datapath</span></div>
+            <details class="project-details"><summary>Architecture &amp; implementation notes</summary><ul><li>Memory-mapped register interface for processor-to-accelerator control.</li><li>AXI4-Lite to APB integration for peripheral communication.</li><li>Repository-reported FPGA timing: 158 MHz Fmax and +3.67 ns WNS.</li></ul></details>
+            <a class="project-link" href="https://github.com/pallavibehurageek-cyber/RISC-V-SoC-Custom-ML-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="rtl">
+          <div class="project-art art-axi"><div class="art-top"><span>PROJECT 03</span><span>PERIPHERAL IP</span></div><div class="bus-diagram"><div class="bus-core">PWM<br/><small>REGISTER BANK</small></div><div class="bus-lines"><i></i><i></i><i></i><i></i><i></i></div><span>AW · W · B · AR · R</span></div><div class="art-bottom"><span>MEMORY MAPPED</span><span>PROGRAMMABLE DUTY / PERIOD</span></div></div>
+          <div class="project-content">
+            <div class="project-kicker">VERILOG · AMBA AXI4-LITE · SELF-CHECKING TB</div><h3>AXI4-Lite Programmable PWM IP Core</h3>
+            <p>A synthesizable memory-mapped PWM peripheral with independent read/write control paths and configurable timing behaviour.</p>
+            <details class="project-details"><summary>Design features</summary><ul><li>Read/write channel handling across AW, W, B, AR and R.</li><li>WSTRB-aware register updates and programmable duty-cycle/period controls.</li><li>Breathing mode, status flags, interrupt output and simulation waveform captures.</li></ul></details>
+            <a class="project-link" href="https://github.com/pallavibehurageek-cyber/AXI4-Lite-Programmable-PWM-Peripheral-IP-Core" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="verification rtl">
+          <div class="project-art art-apb"><div class="art-top"><span>PROJECT 04</span><span>FUNCTIONAL VERIFICATION</span></div><div class="verify-flow"><span>GEN</span><i>→</i><span>DRV</span><i>→</i><span>DUT</span><i>→</i><span>MON</span><i>→</i><span>SCO</span></div><div class="art-bottom"><span>SYSTEMVERILOG</span><span>APB RAM</span></div></div>
+          <div class="project-content">
+            <div class="project-kicker">SYSTEMVERILOG · AMBA APB · SCOREBOARD</div><h3>APB RAM — RTL Design &amp; Verification</h3>
+            <p>An APB RAM peripheral and modular SystemVerilog environment that separates stimulus generation, driving, monitoring and checking.</p>
+            <details class="project-details"><summary>Verification structure &amp; current status</summary><ul><li>Transaction-oriented stimulus with generator and driver components.</li><li>Monitor captures interface activity for expected-versus-observed checking.</li><li>Scoreboard refinement and functional debug remain ongoing; logs and waveform artifacts are available in the repository.</li></ul></details>
+            <a class="project-link" href="https://github.com/pallavibehurageek-cyber/SV-APB-RAM-RTL-Design-Verification" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="accelerator research">
+          <div class="project-art art-evo"><div class="art-top"><span>PROJECT 05</span><span>DESIGN-SPACE EXPLORATION</span></div><div class="precision-flow"><span>FP8</span><i>→</i><span>FP4</span><i>→</i><span>FP4</span><i>→</i><span>FP8</span></div><div class="art-bottom"><span>NSGA-II</span><span>STAGE-WISE PRECISION</span></div></div>
+          <div class="project-content">
+            <div class="project-kicker">PYTHON · VERILOG · NSGA-II · DSP</div><h3>EvoFFT — Stage-Wise Mixed-Precision FFT</h3>
+            <p>A Python-driven exploration framework that studies stage-wise FP4/FP8 arithmetic choices for FFT variants, balancing numerical fidelity with implementation cost.</p>
+            <details class="project-details"><summary>Exploration objectives</summary><ul><li>Generate stage-wise mixed-precision FFT configurations.</li><li>Compare numerical quality with LUT area, power and latency objectives.</li><li>Use Python evaluation with Vivado-oriented implementation flows.</li></ul></details>
+            <a class="project-link" href="https://github.com/pallavibehurageek-cyber/EvoFFT-StageWise-MixedPrecision-FFT-Optimizer" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-wip" data-category="accelerator research">
+          <div class="project-art art-bfp"><div class="art-top"><span>PROJECT 06</span><span class="status">IN PROGRESS</span></div><div class="bfp-grid"><span>01</span><span>10</span><span>11</span><span>00</span><span>01</span><span>10</span></div><div class="art-bottom"><span>2-BIT BFP</span><span>CHANNEL SCATTER</span></div></div>
+          <div class="project-content">
+            <div class="project-kicker">SYSTEMVERILOG · PYTORCH · QUANTIZATION</div><h3>Hessian-Guided BFP2 Quantization Accelerator</h3>
+            <p>Hardware/software co-design exploring Hessian-guided weight grouping and a 2-bit block-floating-point channel-scatter datapath.</p>
+            <details class="project-details"><summary>Research direction &amp; limitations</summary><ul><li>Explore low-bit weight grouping using Hessian-informed analysis.</li><li>Study the SystemVerilog channel-scatter datapath against a software reference.</li><li>Full convolution-reference equivalence and timing closure remain in progress.</li></ul></details>
+            <a class="project-link" href="https://github.com/pallavibehurageek-cyber/Hessian-Guided-BFP2-Quantization-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-wip" data-category="research accelerator">
+          <div class="project-art art-mask"><div class="art-top"><span>PROJECT 07</span><span class="status">IN PROGRESS</span></div><div class="mask-diagram"><span>WEIGHT</span><b>×</b><span>ACTIVATION</span><b>→</b><span>PARTIAL SUM</span></div><div class="art-bottom"><span>CNN DATAPATH</span><span>ARITHMETIC MASKING</span></div></div>
+          <div class="project-content">
+            <div class="project-kicker">SYSTEMVERILOG · CNN DATAPATH · YOSYS / OPENROAD</div><h3>MaskCore — Side-Channel-Aware CNN Accelerator</h3>
+            <p>An active implementation study exploring arithmetic masking across weights, activations and partial sums in a CNN datapath.</p>
+            <details class="project-details"><summary>Current study scope</summary><ul><li>Understand and implement the protected datapath described in the project.</li><li>Reproduce functional checks and study the RTL structure.</li><li>Evaluate implementation overhead. No physical side-channel resistance, security certification or tapeout result is claimed.</li></ul></details>
+            <a class="project-link" href="https://github.com/pallavibehurageek-cyber/MaskCore-CNN-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+          </div>
+        </article>
       </div>
-    </article>
 
-    <div class="project-grid">
-      <article class="project-card">
-        <div class="project-number">02 / COMPUTER ARCHITECTURE</div>
-        <div class="project-tags"><span>RISC-V</span><span>AXI4-LITE</span><span>FPGA</span></div>
-        <h3>RISC-V SoC with Custom ML Accelerator</h3>
-        <p>Integrated a PicoRV32 RV32IM processor, AXI4-Lite-to-APB bridge, BRAM, Q4.4 fixed-point matrix accelerator, APB UART and bare-metal firmware.</p>
-        <div class="card-result"><b>158 MHz</b><span>Repository-reported FPGA Fmax</span></div>
-        <a class="project-link" href="https://github.com/pallavibehurageek-cyber/RISC-V-SoC-Custom-ML-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-number">03 / PERIPHERAL IP</div>
-        <div class="project-tags"><span>VERILOG</span><span>AMBA AXI4-LITE</span><span>SELF-CHECKING TB</span></div>
-        <h3>AXI4-Lite Programmable PWM IP Core</h3>
-        <p>A memory-mapped peripheral with independent read/write FSMs, WSTRB-aware registers, programmable duty and period, breathing mode, status flags and interrupt output.</p>
-        <a class="project-link" href="https://github.com/pallavibehurageek-cyber/AXI4-Lite-Programmable-PWM-Peripheral-IP-Core" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-number">04 / FUNCTIONAL VERIFICATION</div>
-        <div class="project-tags"><span>SYSTEMVERILOG</span><span>AMBA APB</span><span>SCOREBOARD</span></div>
-        <h3>APB RAM — RTL Design &amp; Verification</h3>
-        <p>An APB RAM peripheral and modular test environment using transaction, generator, driver, monitor and scoreboard components. Simulation logs and waveform artifacts are included; functional debug and scoreboard refinement remain ongoing.</p>
-        <a class="project-link" href="https://github.com/pallavibehurageek-cyber/SV-APB-RAM-RTL-Design-Verification" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-number">05 / DSP DESIGN-SPACE EXPLORATION</div>
-        <div class="project-tags"><span>PYTHON</span><span>VERILOG</span><span>NSGA-II</span></div>
-        <h3>EvoFFT — Stage-Wise Mixed-Precision FFT</h3>
-        <p>An NSGA-II exploration framework for generating FFT variants and studying trade-offs among numerical fidelity, LUT area, power and latency with Python evaluation and Vivado-oriented flows.</p>
-        <a class="project-link" href="https://github.com/pallavibehurageek-cyber/EvoFFT-StageWise-MixedPrecision-FFT-Optimizer" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
-      </article>
-
-      <article class="project-card project-wip">
-        <div class="project-number">06 / AI HARDWARE <span class="status">IN PROGRESS</span></div>
-        <div class="project-tags"><span>SYSTEMVERILOG</span><span>BFP2</span><span>PYTORCH</span></div>
-        <h3>Hessian-Guided BFP2 Quantization Accelerator</h3>
-        <p>Hardware/software co-design combining Hessian-guided weight grouping with a 2-bit block-floating-point channel-scatter datapath. Full convolution-reference equivalence and timing closure are still in progress.</p>
-        <a class="project-link" href="https://github.com/pallavibehurageek-cyber/Hessian-Guided-BFP2-Quantization-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
-      </article>
-
-      <article class="project-card project-wip">
-        <div class="project-number">07 / CNN DATAPATH <span class="status">IN PROGRESS</span></div>
-        <div class="project-tags"><span>SYSTEMVERILOG</span><span>ARITHMETIC MASKING</span><span>YOSYS / OPENROAD</span></div>
-        <h3>MaskCore — Side-Channel-Aware CNN Accelerator</h3>
-        <p>An active implementation study exploring arithmetic masking of weights, activations and partial sums. Current work focuses on functional checks and implementation overhead; no physical side-channel resistance or tapeout result is claimed.</p>
-        <a class="project-link" href="https://github.com/pallavibehurageek-cyber/MaskCore-CNN-Accelerator" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
-      </article>
-    </div>
-
-    <div class="additional-work">
-      <h3>Additional digital design</h3>
-      <p><a href="https://github.com/pallavibehurageek-cyber/Weighted-Round-Robin-Arbiter-Verilog">Weighted Round-Robin Arbiter</a> · <a href="https://github.com/pallavibehurageek-cyber/RISC-MIPS32-CPU-Verilog">5-stage MIPS32 CPU</a> · <a href="https://github.com/pallavibehurageek-cyber/8-bit-RTL-UART-Communication-System">8-bit UART</a> · <a href="https://github.com/pallavibehurageek-cyber/electronic-voting-machine-using-verilog-in-xilinx-vivado">Verilog Voting Machine</a> · <a href="https://github.com/pallavibehurageek-cyber/128-Point-Fixed-Point-FFT-Hardware-Accelerator">128-point FFT RTL</a> (simulation and numerical verification pending).</p>
-      <a class="text-link" href="https://github.com/pallavibehurageek-cyber?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories ↗</a>
+      <div class="additional-work">
+        <div><span class="additional-label">ALSO IN THE REPOSITORY</span><h3>Additional digital design</h3></div>
+        <p><a href="https://github.com/pallavibehurageek-cyber/Weighted-Round-Robin-Arbiter-Verilog">Weighted Round-Robin Arbiter</a> · <a href="https://github.com/pallavibehurageek-cyber/RISC-MIPS32-CPU-Verilog">5-stage MIPS32 CPU</a> · <a href="https://github.com/pallavibehurageek-cyber/8-bit-RTL-UART-Communication-System">8-bit UART</a> · <a href="https://github.com/pallavibehurageek-cyber/electronic-voting-machine-using-verilog-in-xilinx-vivado">Verilog Voting Machine</a> · <a href="https://github.com/pallavibehurageek-cyber/128-Point-Fixed-Point-FFT-Hardware-Accelerator">128-point FFT RTL</a> <small>(simulation and numerical verification pending)</small>.</p>
+        <a class="text-link" href="https://github.com/pallavibehurageek-cyber?tab=repositories" target="_blank" rel="noreferrer">Browse all repositories ↗</a>
+      </div>
     </div>
   </section>
 
-  <section class="section-wrap skills-section" id="skills">
-    <div class="section-heading">
-      <div><div class="section-label"><span>03</span> TECHNICAL TOOLKIT</div><h2>Tools I use to <em>build.</em></h2></div>
-      <p>A grouped view of the languages, tools and concepts documented in my projects.</p>
-    </div>
-    <div class="skills-grid">
-      <article class="skill-card"><span class="skill-index">A</span><h3>RTL &amp; digital design</h3><p>Verilog · SystemVerilog · VHDL · FSMs · RTL datapaths · fixed-point arithmetic · memory-mapped IP</p></article>
-      <article class="skill-card"><span class="skill-index">B</span><h3>Verification</h3><p>SystemVerilog testbenches · transaction generation · drivers · monitors · scoreboards · assertions · waveform debugging</p></article>
-      <article class="skill-card"><span class="skill-index">C</span><h3>Architecture &amp; interfaces</h3><p>AMBA AXI4-Lite · AMBA APB · RISC-V · MIPS32 · UART · arbitration · processor/SoC integration</p></article>
-      <article class="skill-card"><span class="skill-index">D</span><h3>Simulation, synthesis &amp; PPA</h3><p>Vivado · Icarus Verilog · GTKWave · Riviera-PRO · Quartus Prime · Cadence Genus · Yosys · OpenROAD · OpenSTA · OpenRAM</p></article>
-      <article class="skill-card"><span class="skill-index">E</span><h3>DSP &amp; AI/ML hardware</h3><p>FFT/IFFT · CORDIC · clock gating · mixed precision · quantization · PyTorch · NumPy · pandas · SciPy</p></article>
-      <article class="skill-card"><span class="skill-index">F</span><h3>Programming &amp; analysis</h3><p>Python · C · C++ · RISC-V Assembly · MATLAB · GNU Octave · Tcl · Bash · Matplotlib · Jupyter</p></article>
-    </div>
-    <p class="skills-note">Listed tools and concepts are drawn from project code, documentation and reports; the list is not a claim of expert-level proficiency in every item.</p>
-  </section>
-
-  <section class="section-wrap experience-section" id="experience">
-    <div class="section-heading">
-      <div><div class="section-label"><span>04</span> EXPERIENCE</div><h2>Engineering <em>experience.</em></h2></div>
-      <p>Practical exposure to embedded control, FPGA-based design and technical study.</p>
-    </div>
-    <div class="experience-list">
-      <article class="experience-item">
-        <div class="experience-date">MAY 2025</div>
-        <div><div class="experience-org">DRDL · INTERNSHIP</div><h3>Design of Controller for Embedded System</h3><p>Designed and implemented a control algorithm on a Xilinx Spartan-3AN FPGA. Work involved VHDL behavioural modelling, dual-layer hardware/software interlocks and RS-232 serial communication.</p><div class="tag-list"><span>VHDL</span><span>Xilinx Spartan-3AN</span><span>FPGA</span><span>RS-232</span></div></div>
-      </article>
-      <article class="experience-item">
-        <div class="experience-date">MAY–JUN 2026</div>
-        <div><div class="experience-org">DRDL · TECHNICAL STUDY</div><h3>S-Band Transmitter for Airborne Data Acquisition</h3><p>Technical study of S-band transmitter architecture and its role in airborne data acquisition.</p></div>
-      </article>
+  <section class="process-section" id="process">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><div class="section-label"><span>03</span> HOW I APPROACH HARDWARE</div><h2>From specification <em>to evidence.</em></h2></div>
+        <p class="heading-aside">A repeatable workflow that keeps implementation decisions connected to test results and measurable trade-offs.</p>
+      </div>
+      <div class="process-grid">
+        <article><span>01</span><div class="process-icon">⌘</div><h3>Architecture</h3><p>Break the problem into datapaths, control logic, interfaces, memories and timing requirements.</p></article>
+        <article><span>02</span><div class="process-icon">⌗</div><h3>RTL implementation</h3><p>Translate the architecture into synthesizable Verilog/SystemVerilog and structured interfaces.</p></article>
+        <article><span>03</span><div class="process-icon">✓</div><h3>Verification</h3><p>Exercise functional behaviour through testbenches, scoreboards, assertions and waveform debugging.</p></article>
+        <article><span>04</span><div class="process-icon">▥</div><h3>Implementation analysis</h3><p>Use synthesis and timing reports to study area, frequency and power-related trade-offs.</p></article>
+      </div>
+      <div class="ppa-band">
+        <div><span class="section-label">IMPLEMENTATION INTEREST</span><h3>Performance is more than a simulation passing.</h3><p>I’m interested in the connection between RTL choices and implementation outcomes: resource usage, clock frequency, timing slack, switching activity, power estimates and numerical quality.</p></div>
+        <div class="ppa-tags"><span>Area</span><span>Timing</span><span>Frequency</span><span>Power estimate</span><span>SQNR</span><span>Resource use</span></div>
+      </div>
     </div>
   </section>
 
-  <section class="section-wrap learning-section" id="learning">
-    <div class="section-heading">
-      <div><div class="section-label"><span>05</span> CONTINUED LEARNING</div><h2>Learning beyond the <em>projects.</em></h2></div>
+  <section class="skills-section" id="skills">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><div class="section-label"><span>04</span> TECHNICAL TOOLKIT</div><h2>Tools, languages &amp; <em>methods.</em></h2></div>
+        <p class="heading-aside">Grouped by how they appear in my project work, rather than as one long list of technologies.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-index">A / 01</span><h3>HDL &amp; RTL design</h3><p>Verilog, SystemVerilog, VHDL, FSMs, RTL datapaths, fixed-point arithmetic, memory-mapped registers and peripheral IP.</p><div class="skill-tags"><span>RTL</span><span>FSM</span><span>Datapaths</span><span>IP integration</span></div></article>
+        <article class="skill-card"><span class="skill-index">A / 02</span><h3>Functional verification</h3><p>SystemVerilog testbenches, transaction generators, drivers, monitors, scoreboards, assertions, self-checking tests and waveform debug.</p><div class="skill-tags"><span>Testbench</span><span>Scoreboard</span><span>Assertions</span></div></article>
+        <article class="skill-card"><span class="skill-index">A / 03</span><h3>Protocols &amp; architecture</h3><p>AMBA AXI4-Lite, AMBA APB, RISC-V, MIPS32, UART, arbitration and processor/SoC integration.</p><div class="skill-tags"><span>AXI4-Lite</span><span>APB</span><span>RISC-V</span></div></article>
+        <article class="skill-card"><span class="skill-index">B / 01</span><h3>Simulation &amp; FPGA</h3><p>Xilinx Vivado, Icarus Verilog, GTKWave, Aldec Riviera-PRO, Intel Quartus Prime and MATLAB / GNU Octave.</p><div class="skill-tags"><span>Simulation</span><span>Waveforms</span><span>FPGA flow</span></div></article>
+        <article class="skill-card"><span class="skill-index">B / 02</span><h3>Synthesis &amp; PPA</h3><p>Cadence Genus, Yosys, OpenROAD, OpenSTA, OpenRAM, timing reports, area evaluation and SAIF-based power estimation.</p><div class="skill-tags"><span>Synthesis</span><span>Timing</span><span>Area / power</span></div></article>
+        <article class="skill-card"><span class="skill-index">B / 03</span><h3>DSP &amp; accelerator design</h3><p>FFT/IFFT, CORDIC, clock gating, fixed-point datapaths, mixed precision, low-bit quantization and MAC-oriented hardware.</p><div class="skill-tags"><span>FFT</span><span>Fixed point</span><span>Quantization</span></div></article>
+        <article class="skill-card"><span class="skill-index">C / 01</span><h3>Programming &amp; scripting</h3><p>Python, C, C++, RISC-V Assembly, MATLAB, GNU Octave, Tcl and Bash / Shell.</p><div class="skill-tags"><span>Python</span><span>C / C++</span><span>Tcl</span></div></article>
+        <article class="skill-card"><span class="skill-index">C / 02</span><h3>AI/ML &amp; scientific computing</h3><p>PyTorch, Torchvision, NumPy, pandas, SciPy, Matplotlib, Jupyter and model-evaluation workflows.</p><div class="skill-tags"><span>PyTorch</span><span>NumPy</span><span>SciPy</span></div></article>
+        <article class="skill-card"><span class="skill-index">C / 03</span><h3>Embedded &amp; RF tools</h3><p>ESP32, Arduino IDE, OpenCV, MediaPipe, ANSYS HFSS and Altair FEKO.</p><div class="skill-tags"><span>Embedded</span><span>Computer vision</span><span>EM simulation</span></div></article>
+      </div>
+      <p class="skills-note">Tools and methods are listed because they appear in project code, documentation or reports. This list does not imply expert-level proficiency in every item.</p>
     </div>
-    <div class="learning-grid">
-      <article><div class="learning-meta">30 HOURS · JUL–AUG 2026</div><h3>RTL, IP Integration and SoC Signoff</h3><p>NIELIT × SoCTeamup Semiconductors bootcamp under a MeitY-sponsored semiconductor EdTech initiative.</p></article>
-      <article><div class="learning-meta">OCT–NOV 2025</div><h3>Embedded IoT Application Development</h3><p>One-month online professional development programme through IETE Hyderabad Centre.</p></article>
-      <article><div class="learning-meta">2025 · 30 LEARNING HOURS</div><h3>Indo-Dutch Cyber Security School</h3><p>8th edition; 30 CPE credits and certificate of participation.</p></article>
-      <article><div class="learning-meta">JAN 2026 · TECHNICAL POSTER</div><h3>45th National Symposium on Instrumentation</h3><p>Presented “Graphene MEMS RF Switches for UAV Radar Beam Steering” at Osmania University.</p></article>
+  </section>
+
+  <section class="experience-section" id="experience">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><div class="section-label"><span>05</span> ENGINEERING EXPERIENCE</div><h2>Learning through <em>engineering work.</em></h2></div>
+        <p class="heading-aside">A record of practical exposure, technical programmes and presentation work.</p>
+      </div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-date">09 MAY — 30 MAY 2025</div>
+          <div class="experience-main"><div class="experience-org">DRDL · INTERNSHIP</div><h3>Design of Controller for Embedded System</h3><p>Designed and implemented a control algorithm on a Xilinx Spartan-3AN FPGA for an embedded control application. The work involved VHDL behavioural modelling, dual-layer hardware/software interlocks and RS-232 serial communication.</p><div class="tag-list"><span>VHDL</span><span>Xilinx Spartan-3AN</span><span>FPGA</span><span>Hardware / Software Interlocks</span><span>RS-232</span></div></div>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">15 MAY — 15 JUN 2026</div>
+          <div class="experience-main"><div class="experience-org">DRDL · TECHNICAL STUDY</div><h3>Study of S-Band Transmitter for Airborne Data Acquisition</h3><p>Technical study of S-band transmitter architecture and its role in airborne data acquisition.</p><div class="tag-list"><span>S-Band</span><span>RF Systems</span><span>Communication</span></div></div>
+        </article>
+      </div>
     </div>
-    <div class="other-ece"><span>OTHER ECE WORK</span><p><a href="https://github.com/pallavibehurageek-cyber/10GHz-Vivaldi-Antenna-HFSS">10 GHz Vivaldi Antenna</a> · <a href="https://github.com/pallavibehurageek-cyber/hfss-substrate-integrated-waveguide-antenna">SIW Slot Antenna</a> · <a href="https://github.com/pallavibehurageek-cyber/Gesture-Based-Vehicle-Control">Gesture-Based Vehicle Control</a> · <a href="https://github.com/pallavibehurageek-cyber/EOG-Based-Real-Time-Eye-Tracking">EOG Eye Tracking</a> · <a href="https://github.com/pallavibehurageek-cyber/extended-kalman-object-tracking">Extended Kalman Object Tracking</a></p></div>
+  </section>
+
+  <section class="learning-section">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><div class="section-label"><span>06</span> TECHNICAL PROGRAMMES &amp; PRESENTATIONS</div><h2>Learning beyond the <em>repository.</em></h2></div>
+      </div>
+      <div class="learning-grid">
+        <article><div class="learning-top"><span>30 HOURS</span><span>JUL–AUG 2026</span></div><h3>RTL, IP Integration and SoC Signoff</h3><p>NIELIT × SoCTeamup Semiconductors bootcamp under a MeitY-sponsored semiconductor EdTech initiative.</p><div class="learning-tags"><span>RTL Design</span><span>IP Integration</span><span>SoC Signoff</span></div></article>
+        <article><div class="learning-top"><span>IETE HYDERABAD CENTRE</span><span>OCT–NOV 2025</span></div><h3>Embedded IoT Application Development</h3><p>One-month online professional development programme focused on embedded IoT applications.</p><div class="learning-tags"><span>Embedded Systems</span><span>IoT</span></div></article>
+        <article><div class="learning-top"><span>30 LEARNING HOURS</span><span>2025</span></div><h3>Indo-Dutch Cyber Security School</h3><p>8th edition; 30 CPE credits and certificate of participation.</p><div class="learning-tags"><span>Cybersecurity</span><span>Continuing Education</span></div></article>
+        <article><div class="learning-top"><span>TECHNICAL POSTER</span><span>29–30 JAN 2026</span></div><h3>45th National Symposium on Instrumentation</h3><p>Presented “Graphene MEMS RF Switches for UAV Radar Beam Steering” at Osmania University.</p><div class="learning-tags"><span>Graphene MEMS</span><span>RF Switches</span><span>Radar</span></div></article>
+      </div>
+      <div class="recognition-card"><span>RECOGNITION · 2025</span><div><h3>Jijnasa 2K25</h3><p>Paper-presentation recognition.</p></div></div>
+      <div class="other-ece"><span>ADDITIONAL ECE PROJECTS</span><p><a href="https://github.com/pallavibehurageek-cyber/10GHz-Vivaldi-Antenna-HFSS">10 GHz Vivaldi Antenna</a> · <a href="https://github.com/pallavibehurageek-cyber/hfss-substrate-integrated-waveguide-antenna">SIW Slot Antenna</a> · <a href="https://github.com/pallavibehurageek-cyber/Gesture-Based-Vehicle-Control">Gesture-Based Vehicle Control</a> · <a href="https://github.com/pallavibehurageek-cyber/EOG-Based-Real-Time-Eye-Tracking">EOG-based Eye Tracking</a> · <a href="https://github.com/pallavibehurageek-cyber/extended-kalman-object-tracking">Extended Kalman Object Tracking</a></p></div>
+    </div>
   </section>
 
   <section class="contact-section" id="contact">
     <div class="section-wrap contact-inner">
-      <div class="section-label"><span>06</span> CONTACT</div>
-      <h2>Ideas are better<br><em>when shared.</em></h2>
-      <p>For conversations around digital design, verification, computer architecture and hardware acceleration, connect with me.</p>
-      <div class="hero-actions"><a class="button button-primary" href="mailto:pallavibehurageek@gmail.com">Email ↗</a><a class="button button-secondary" href="https://www.linkedin.com/in/pallavi-behura-547329214/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="button button-secondary" href="https://github.com/pallavibehurageek-cyber" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      <div class="section-label"><span>07</span> CONNECT</div>
+      <h2>Build, test, <em>understand.</em></h2>
+      <p>I enjoy exchanging ideas about RTL design, functional verification, processor architecture and hardware acceleration.</p>
+      <div class="hero-actions"><a class="button button-primary" href="mailto:pallavibehurageek@gmail.com">Email ↗</a><a class="button button-outline" href="https://www.linkedin.com/in/pallavi-behura-547329214/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="button button-outline" href="https://github.com/pallavibehurageek-cyber" target="_blank" rel="noreferrer">GitHub ↗</a></div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">PB</span><span>PALLAVI BEHURA</span></a><span>DESIGN · VERIFY · EVALUATE</span><span>© <span id="year"></span> Pallavi Behura</span></footer>
+<footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">PB</span><span>PALLAVI BEHURA</span></a><span>ARCHITECTURE · RTL · VERIFICATION · PPA</span><span>© <span id="year"></span> Pallavi Behura</span></footer>
 <script src="script.js"></script>
 </body>
 </html>
