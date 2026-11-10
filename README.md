@@ -7,7 +7,7 @@ A responsive engineering portfolio showcasing project work in **VLSI / RTL desig
 **GitHub:** https://github.com/pallavibehurageek-cyber  
 **LinkedIn:** https://www.linkedin.com/in/pallavi-behura-547329214/
 
-## Current focus
+## Areas of exploration
 
 - Digital Design / RTL using Verilog and SystemVerilog
 - Design Verification with transaction-based testbenches, scoreboards and waveform debug
