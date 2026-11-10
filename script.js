@@ -1,1 +1,21 @@
-const menuButton=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav-links');menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');}));document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(item=>item.classList.remove('active'));button.classList.add('active');const categories=button.dataset.filter==='all'?[]:button.dataset.filter.split(' ');document.querySelectorAll('.project-card').forEach(card=>{const cardCategories=(card.dataset.category||'').split(' ');card.classList.toggle('hidden',categories.length>0&&!categories.some(category=>cardCategories.includes(category)));});}));document.getElementById('year').textContent=new Date().getFullYear();
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
+
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
+const year = document.querySelector("#year");
+if (year) {
+  year.textContent = String(new Date().getFullYear());
+}
