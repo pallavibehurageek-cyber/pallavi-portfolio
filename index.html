@@ -88,7 +88,7 @@
       </div>
 
       <div class="project-filters" role="group" aria-label="Filter projects">
-        <button class="filter active" data-filter="all" aria-pressed="true">All work <span>07</span></button>
+        <button class="filter active" data-filter="all" aria-pressed="true">All work <span>08</span></button>
         <button class="filter" data-filter="rtl" aria-pressed="false">RTL &amp; IP</button>
         <button class="filter" data-filter="verification" aria-pressed="false">Verification</button>
         <button class="filter" data-filter="architecture" aria-pressed="false">Architecture</button>
@@ -96,9 +96,34 @@
         <button class="filter" data-filter="research" aria-pressed="false">AI/ML research</button>
       </div>
 
+      <article class="project-card featured-project" data-category="accelerator architecture">
+        <div class="project-art art-soc">
+          <div class="art-top"><span>PROJECT 01</span><span>AI HARDWARE / PHYSICAL DESIGN</span></div>
+          <div class="soc-diagram"><div class="soc-block cpu">8 × 8<br/><small>PE ARRAY</small></div><div class="soc-bus">WEIGHT-STATIONARY<br/>DATAFLOW</div><div class="soc-peripherals"><span>64 PEs</span><span>MAC / CYCLE</span><span>RTL → GDS</span></div></div>
+          <div class="art-bottom"><span>SYSTEMVERILOG</span><span>SKY130 · ASAP7</span></div>
+        </div>
+        <div class="featured-content">
+          <div class="project-kicker">SYSTEMVERILOG · 64 PROCESSING ELEMENTS · RTL-TO-GDS</div>
+          <h3>8×8 Weight-Stationary Systolic Array</h3>
+          <p class="project-summary">A 64-processing-element matrix-compute accelerator using weight-stationary dataflow. Activations move across the array while partial sums accumulate through the processing elements, reducing repeated weight movement.</p>
+          <div class="metric-grid">
+            <div><b>64</b><span>PROCESSING ELEMENTS</span></div>
+            <div><b>80 / 80</b><span>DIRECTED CHECKS REPORTED</span></div>
+            <div><b>500 MHz</b><span>ASAP7 RUN REPORTED*</span></div>
+          </div>
+          <div class="detail-columns">
+            <div><b>Architecture</b><p>Eight-by-eight weight-stationary array; each processing element performs a multiply-accumulate operation per cycle.</p></div>
+            <div><b>Implementation</b><p>SystemVerilog RTL, self-checking simulation, and process-specific physical-design experiments using open-source EDA tools.</p></div>
+            <div><b>Status</b><p>Caravel tapeout-track precheck is 8/13 passing. Wrapper issues remain under review; tapeout approval and fabrication are not claimed.</p></div>
+          </div>
+          <p class="fine-print">*500 MHz is the repository-reported ASAP7 result. Process-node results are specific to their documented flows and are not a normalized cross-node comparison.</p>
+          <a class="project-link" href="https://github.com/pallavibehurageek-cyber/8x8-Weight-Stationary-Systolic-Array" target="_blank" rel="noreferrer">Explore RTL, reports and physical-design artifacts <span>↗</span></a>
+        </div>
+      </article>
+
       <article class="project-card featured-project" data-category="accelerator">
         <div class="project-art art-fft">
-          <div class="art-top"><span>PROJECT 01</span><span>DSP ARCHITECTURE</span></div>
+          <div class="art-top"><span>PROJECT 02</span><span>DSP ARCHITECTURE</span></div>
           <div class="fft-visual"><div class="fft-wave"></div><div class="fft-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="fft-label">N = 4096</div></div>
           <div class="art-bottom"><span>RADIX-16³</span><span>CONTINUOUS FLOW</span><span>FFT ↔ IFFT</span></div>
         </div>
@@ -123,7 +148,7 @@
 
       <div class="project-grid">
         <article class="project-card" data-category="architecture accelerator">
-          <div class="project-art art-soc"><div class="art-top"><span>PROJECT 02</span><span>COMPUTER ARCHITECTURE</span></div><div class="soc-diagram"><div class="soc-block cpu">RV32IM<br/><small>CPU</small></div><div class="soc-bus">AXI4-Lite<br/>↕<br/>APB</div><div class="soc-peripherals"><span>BRAM</span><span>Q4.4 MAC</span><span>UART</span></div></div><div class="art-bottom"><span>PICORV32</span><span>MEMORY-MAPPED I/O</span></div></div>
+          <div class="project-art art-soc"><div class="art-top"><span>PROJECT 03</span><span>COMPUTER ARCHITECTURE</span></div><div class="soc-diagram"><div class="soc-block cpu">RV32IM<br/><small>CPU</small></div><div class="soc-bus">AXI4-Lite<br/>↕<br/>APB</div><div class="soc-peripherals"><span>BRAM</span><span>Q4.4 MAC</span><span>UART</span></div></div><div class="art-bottom"><span>PICORV32</span><span>MEMORY-MAPPED I/O</span></div></div>
           <div class="project-content">
             <div class="project-kicker">VERILOG · AXI4-LITE · APB · FPGA</div><h3>RISC-V SoC with Custom ML Accelerator</h3>
             <p>A processor-based system integrating a PicoRV32 RV32IM core, AXI4-Lite-to-APB bridge, BRAM, a fixed-point matrix accelerator, APB UART and bare-metal firmware.</p>
@@ -134,7 +159,7 @@
         </article>
 
         <article class="project-card" data-category="rtl">
-          <div class="project-art art-axi"><div class="art-top"><span>PROJECT 03</span><span>PERIPHERAL IP</span></div><div class="bus-diagram"><div class="bus-core">PWM<br/><small>REGISTER BANK</small></div><div class="bus-lines"><i></i><i></i><i></i><i></i><i></i></div><span>AW · W · B · AR · R</span></div><div class="art-bottom"><span>MEMORY MAPPED</span><span>PROGRAMMABLE DUTY / PERIOD</span></div></div>
+          <div class="project-art art-axi"><div class="art-top"><span>PROJECT 04</span><span>PERIPHERAL IP</span></div><div class="bus-diagram"><div class="bus-core">PWM<br/><small>REGISTER BANK</small></div><div class="bus-lines"><i></i><i></i><i></i><i></i><i></i></div><span>AW · W · B · AR · R</span></div><div class="art-bottom"><span>MEMORY MAPPED</span><span>PROGRAMMABLE DUTY / PERIOD</span></div></div>
           <div class="project-content">
             <div class="project-kicker">VERILOG · AMBA AXI4-LITE · SELF-CHECKING TB</div><h3>AXI4-Lite Programmable PWM IP Core</h3>
             <p>A synthesizable memory-mapped PWM peripheral with independent read/write control paths and configurable timing behaviour.</p>
@@ -144,7 +169,7 @@
         </article>
 
         <article class="project-card" data-category="verification rtl">
-          <div class="project-art art-apb"><div class="art-top"><span>PROJECT 04</span><span>FUNCTIONAL VERIFICATION</span></div><div class="verify-flow"><span>GEN</span><i>→</i><span>DRV</span><i>→</i><span>DUT</span><i>→</i><span>MON</span><i>→</i><span>SCO</span></div><div class="art-bottom"><span>SYSTEMVERILOG</span><span>APB RAM</span></div></div>
+          <div class="project-art art-apb"><div class="art-top"><span>PROJECT 05</span><span>FUNCTIONAL VERIFICATION</span></div><div class="verify-flow"><span>GEN</span><i>→</i><span>DRV</span><i>→</i><span>DUT</span><i>→</i><span>MON</span><i>→</i><span>SCO</span></div><div class="art-bottom"><span>SYSTEMVERILOG</span><span>APB RAM</span></div></div>
           <div class="project-content">
             <div class="project-kicker">SYSTEMVERILOG · AMBA APB · SCOREBOARD</div><h3>APB RAM — RTL Design &amp; Verification</h3>
             <p>An APB RAM peripheral and modular SystemVerilog environment that separates stimulus generation, driving, monitoring and checking.</p>
@@ -154,7 +179,7 @@
         </article>
 
         <article class="project-card" data-category="accelerator research">
-          <div class="project-art art-evo"><div class="art-top"><span>PROJECT 05</span><span>DESIGN-SPACE EXPLORATION</span></div><div class="precision-flow"><span>FP8</span><i>→</i><span>FP4</span><i>→</i><span>FP4</span><i>→</i><span>FP8</span></div><div class="art-bottom"><span>NSGA-II</span><span>STAGE-WISE PRECISION</span></div></div>
+          <div class="project-art art-evo"><div class="art-top"><span>PROJECT 06</span><span>DESIGN-SPACE EXPLORATION</span></div><div class="precision-flow"><span>FP8</span><i>→</i><span>FP4</span><i>→</i><span>FP4</span><i>→</i><span>FP8</span></div><div class="art-bottom"><span>NSGA-II</span><span>STAGE-WISE PRECISION</span></div></div>
           <div class="project-content">
             <div class="project-kicker">PYTHON · VERILOG · NSGA-II · DSP</div><h3>EvoFFT — Stage-Wise Mixed-Precision FFT</h3>
             <p>A Python-driven exploration framework that studies stage-wise FP4/FP8 arithmetic choices for FFT variants, balancing numerical fidelity with implementation cost.</p>
@@ -164,7 +189,7 @@
         </article>
 
         <article class="project-card project-wip" data-category="accelerator research">
-          <div class="project-art art-bfp"><div class="art-top"><span>PROJECT 06</span><span class="status">IN PROGRESS</span></div><div class="bfp-grid"><span>01</span><span>10</span><span>11</span><span>00</span><span>01</span><span>10</span></div><div class="art-bottom"><span>2-BIT BFP</span><span>CHANNEL SCATTER</span></div></div>
+          <div class="project-art art-bfp"><div class="art-top"><span>PROJECT 07</span><span class="status">IN PROGRESS</span></div><div class="bfp-grid"><span>01</span><span>10</span><span>11</span><span>00</span><span>01</span><span>10</span></div><div class="art-bottom"><span>2-BIT BFP</span><span>CHANNEL SCATTER</span></div></div>
           <div class="project-content">
             <div class="project-kicker">SYSTEMVERILOG · PYTORCH · QUANTIZATION</div><h3>Hessian-Guided BFP2 Quantization Accelerator</h3>
             <p>Hardware/software co-design exploring Hessian-guided weight grouping and a 2-bit block-floating-point channel-scatter datapath.</p>
@@ -174,7 +199,7 @@
         </article>
 
         <article class="project-card project-wip" data-category="research accelerator">
-          <div class="project-art art-mask"><div class="art-top"><span>PROJECT 07</span><span class="status">IN PROGRESS</span></div><div class="mask-diagram"><span>WEIGHT</span><b>×</b><span>ACTIVATION</span><b>→</b><span>PARTIAL SUM</span></div><div class="art-bottom"><span>CNN DATAPATH</span><span>ARITHMETIC MASKING</span></div></div>
+          <div class="project-art art-mask"><div class="art-top"><span>PROJECT 08</span><span class="status">IN PROGRESS</span></div><div class="mask-diagram"><span>WEIGHT</span><b>×</b><span>ACTIVATION</span><b>→</b><span>PARTIAL SUM</span></div><div class="art-bottom"><span>CNN DATAPATH</span><span>ARITHMETIC MASKING</span></div></div>
           <div class="project-content">
             <div class="project-kicker">SYSTEMVERILOG · CNN DATAPATH · YOSYS / OPENROAD</div><h3>MaskCore — Side-Channel-Aware CNN Accelerator</h3>
             <p>An active implementation study exploring arithmetic masking across weights, activations and partial sums in a CNN datapath.</p>
@@ -245,7 +270,7 @@
         </article>
         <article class="experience-item">
           <div class="experience-date">15 MAY — 15 JUN 2026</div>
-          <div class="experience-main"><div class="experience-org">DRDL · TECHNICAL STUDY</div><h3>Study of S-Band Transmitter for Airborne Data Acquisition</h3><p>Technical study of S-band transmitter architecture and its role in airborne data acquisition.</p><div class="tag-list"><span>S-Band</span><span>RF Systems</span><span>Communication</span></div></div>
+          <div class="experience-main"><div class="experience-org">DRDL · PROJECT INTERNSHIP</div><h3>Study of S-Band Transmitter for Airborne Data Acquisition</h3><p>Technical study of S-band transmitter architecture and its role in airborne data acquisition.</p><div class="tag-list"><span>S-Band</span><span>RF Systems</span><span>Communication</span></div></div>
         </article>
       </div>
     </div>
@@ -262,7 +287,7 @@
         <article><div class="learning-top"><span>30 LEARNING HOURS</span><span>2025</span></div><h3>Indo-Dutch Cyber Security School</h3><p>8th edition; 30 CPE credits and certificate of participation.</p><div class="learning-tags"><span>Cybersecurity</span><span>Continuing Education</span></div></article>
         <article><div class="learning-top"><span>TECHNICAL POSTER</span><span>29–30 JAN 2026</span></div><h3>45th National Symposium on Instrumentation</h3><p>Presented “Graphene MEMS RF Switches for UAV Radar Beam Steering” at Osmania University.</p><div class="learning-tags"><span>Graphene MEMS</span><span>RF Switches</span><span>Radar</span></div></article>
       </div>
-      <div class="recognition-card"><span>RECOGNITION · 2025</span><div><h3>Jijnasa 2K25</h3><p>Paper-presentation recognition.</p></div></div>
+      <div class="recognition-card"><span>RECOGNITION · NATIONAL-LEVEL EVENT</span><div><h3>Second Prize</h3><p>Awarded second prize at a national-level technical event.</p></div></div>
       <div class="other-ece"><span>ADDITIONAL ECE PROJECTS</span><p><a href="https://github.com/pallavibehurageek-cyber/10GHz-Vivaldi-Antenna-HFSS">10 GHz Vivaldi Antenna</a> · <a href="https://github.com/pallavibehurageek-cyber/hfss-substrate-integrated-waveguide-antenna">SIW Slot Antenna</a> · <a href="https://github.com/pallavibehurageek-cyber/Gesture-Based-Vehicle-Control">Gesture-Based Vehicle Control</a> · <a href="https://github.com/pallavibehurageek-cyber/EOG-Based-Real-Time-Eye-Tracking">EOG-based Eye Tracking</a> · <a href="https://github.com/pallavibehurageek-cyber/extended-kalman-object-tracking">Extended Kalman Object Tracking</a></p></div>
     </div>
   </section>
