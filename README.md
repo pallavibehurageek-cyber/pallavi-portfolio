@@ -60,7 +60,7 @@ The live portfolio lists two DRDL project-internship engagements. The documented
 
 ## Project accuracy notes
 
-- 8×8 array metrics are process-specific block-level results; the Caravel tapeout-track precheck is 8/13 and no tapeout approval or fabrication is claimed.
+- 8×8 array metrics are process-specific block-level results; the Caravel tapeout-track precheck is 8/13, and the ASAP7 PDN analysis records an unresolved worst-case IR-drop issue. No tapeout approval or fabrication is claimed.
 - FFT/IFFT metrics are repository-reported comparisons against a reproduced baseline under the documented 45 nm flow. Power estimates are pre-clock-tree.
 - SoC timing values are taken from the documented FPGA implementation flow.
 - APB RAM functional debug and scoreboard refinement remain ongoing.
