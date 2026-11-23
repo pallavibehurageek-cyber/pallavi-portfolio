@@ -18,6 +18,9 @@ The website is organised around:
 
 ## Selected projects
 
+### 8×8 Weight-Stationary Systolic Array
+A 64-processing-element SystemVerilog accelerator using weight-stationary dataflow. The repository documents directed self-checking tests (80/80 reported) and process-specific physical-design experiments on SkyWater 130 nm and ASAP7 7 nm, plus an IHP SG13G2 flow. The Caravel tapeout-track precheck is 8/13; tapeout approval, completed sign-off and fabrication are not claimed.
+
 ### Continuous-Flow 4096-Point FFT / IFFT Accelerator
 A ROM-free, conflict-free radix-16³ architecture exploring occupancy-driven clock gating, CORDIC optimization and memory word-length choices. The repository documents 15/15 functional tests, a 19.08% area reduction and a 54.7% power-estimate reduction at 100% occupancy against a reproduced baseline. Power values are pre-clock-tree estimates in the documented 45 nm flow.
 
@@ -38,6 +41,10 @@ Python-driven NSGA-II exploration of stage-wise FP4/FP8 FFT configurations and t
 - **MaskCore CNN Accelerator:** in-progress exploration of arithmetic masking across weights, activations and partial sums. No physical side-channel resistance, security certification or tapeout is claimed.
 - **Hessian-Guided BFP2 Accelerator:** in-progress study of Hessian-guided grouping and a 2-bit block-floating-point channel-scatter datapath. Full reference equivalence and hardware validation remain in progress.
 
+## Experience
+
+The live portfolio lists two DRDL project-internship engagements. The documented work titles and dates are shown on the website; no additional project scope is implied here.
+
 ## Technical toolkit
 
 | Category | Tools and concepts |
@@ -53,6 +60,7 @@ Python-driven NSGA-II exploration of stage-wise FP4/FP8 FFT configurations and t
 
 ## Project accuracy notes
 
+- 8×8 array metrics are process-specific block-level results; the Caravel tapeout-track precheck is 8/13 and no tapeout approval or fabrication is claimed.
 - FFT/IFFT metrics are repository-reported comparisons against a reproduced baseline under the documented 45 nm flow. Power estimates are pre-clock-tree.
 - SoC timing values are taken from the documented FPGA implementation flow.
 - APB RAM functional debug and scoreboard refinement remain ongoing.
